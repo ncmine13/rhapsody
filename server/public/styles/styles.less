@@ -1,0 +1,60 @@
+@beige: #F3EDE2;
+
+body {
+	background-color: @beige;
+	text-align: center;
+	font-family: 'Raleway', sans-serif;
+	display:flex;
+	flex-direction: column;
+	/*justify-content: center;*/
+	align-items:center;
+
+	.form-container {
+		width:40%;
+		button {
+		  float: left;
+		  display: block;
+		  background: #666EE8;
+		  color: white;
+		  box-shadow: 0 7px 14px 0 rgba(49,49,93,0.10), 0 3px 6px 0 rgba(0,0,0,0.08);
+		  border-radius: 4px;
+		  border: 0;
+		  margin-top: 20px;
+		  font-size: 15px;
+		  font-weight: 400;
+		  width: 100%;
+		  height: 40px;
+		  line-height: 38px;
+		}
+	}
+	.billing-div, #shipping-div {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+
+		input, select {
+			width: 100%;
+			border: none;
+			border-radius: 3px;
+			margin-bottom: 10px;
+			padding:10px;
+			font-size: 15px;
+		}
+	}
+	.product-div {
+		display: flex;
+	    flex-direction: row;
+	    align-items: center;
+	    justify-content: center;
+	    margin: 5%;
+	    .product-card {
+	    	.product-image {
+	    		margin:10px;
+	    		img {
+		    		max-height: 150px;
+		    	}
+	    	}
+	    }
+	}
+}

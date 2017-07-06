@@ -1,0 +1,62 @@
+ <div class="form-container">
+  <form action="/charge" method="post" id="payment-form">
+       <div class="form-row">
+         <label for="card-element">
+           Credit or debit card
+         </label>
+         <div id="card-element"></div>
+         <div id="card-errors" role="alert"></div>
+       </div>
+
+      <div class="billing-div">
+        <input type="text" name="name" id="name" data-type="string" data-message="This field cannot be empty" placeholder="Name"/>
+        <input type="text" name="email" id="email" data-type="expression" data-message="Not a valid email address" placeholder="Email" />
+        <input type="text" name="city" id="city" data-type="string" data-message="This field cannot be empty" placeholder="City"/>
+        <input type="text" name="address" id="address" data-type="string" data-message="This field cannot be empty"  placeholder="Address"/>
+        <input type="text" name="address_zip" id="zip" data-type="string" data-message="This field cannot be empty" placeholder="Zip Code" />
+        <select name="address_country" id="country" data-type="string" data-message="This field cannot be empty" placeholder="Country">
+          <option value="">Select</option>
+          <option value="US">USA</option>
+          <option value="CA">CANADA</option>
+        </select>
+      </div>
+
+      <div id="shipping-same" value="use-shipping">
+        <label for="same-as-billing">Shipping same as billing</label>
+        <input type="checkbox" id="same-as-billing" value="" checked="checked"/>
+      </div>
+
+      <div id="shipping-div">
+        <input type="text" name="sname" id="sname" data-type="string" data-message="This field cannot be empty" placeholder="Name"/>
+        <input type="text" name="semail" id="semail" data-type="expression" data-message="Not a valid email address" placeholder="Email"/>
+        <input type="text" name="scity" id="scity" data-type="string" data-message="This field cannot be empty" placeholder="City" />
+        <input type="text" name="saddress" id="saddress" data-type="string" data-message="This field cannot be empty" placeholder="Address"/>
+        <input type="text" name="szip" id="zip" data-type="string" data-message="This field cannot be empty" placeholder="Zip Code"/>
+        <select name="country" id="scountry" data-type="string" data-message="This field cannot be empty" placeholder="Country">
+          <option value="">Select</option>
+          <option value="US">USA</option>
+          <option value="CA">CANADA</option>
+        </select>
+      </div>
+      <button>Submit Payment</button>
+    </form>
+  </div>
+
+{{!-- 
+
+      <span style="line-height:1.2;letter-spacing:1px;">Mr. and Mrs. George Jimenz</span><br>
+      <span style="line-height:2;letter-spacing:1px;">Request the pleasure of your company</span><br>
+      <span style="line-height:2;letter-spacing:1px;">At the marriage of their daughter</span><br><br>
+
+           <span style="font-size:2.5em;letter-spacing:1px; line-height:1;">&nbsp;&nbsp;Melissa Aree</span><br>
+              <span style="font-size:2em;">to</span><br>
+              <span style="font-size:2.5em;">&nbsp;&nbsp;Ryan Rupert Couper</span><br>
+
+             <br><span>Saturday</span><br>
+             <span>September 9,2017</span><br>
+             <span>At half past four in the afternoon</span><br>
+            
+             <br><span>Wicker Park Gardens</span><br>
+             <span>225 S Prospect Ave</span><br>
+             <span>Elmhurst, Illinois</span>
+     --}}
